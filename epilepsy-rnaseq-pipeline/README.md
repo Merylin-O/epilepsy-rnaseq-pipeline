@@ -56,10 +56,6 @@ Data files are not stored in this repository (see `.gitignore`); the notebook do
 
 Python, pandas, numpy, matplotlib, seaborn, GEOparse, PyDESeq2, scikit-learn (PCA), mygene, gseapy
 
-## Status
-
-This pipeline is being extended toward computational neural modelling (conductance-based models, PPI network analysis via STRING, Allen Brain Atlas, GTEx) as part of ongoing PhD-track research linking transcriptomic changes to neural excitability phenotypes.
-
 ## Author
 
 Merylin Wuraola Ogunlola
