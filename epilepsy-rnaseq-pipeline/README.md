@@ -8,18 +8,18 @@ This pipeline takes raw count data from a public GEO dataset through to biologic
 
 - Data retrieval and cleaning (GEOparse, manual metadata construction)
 - Quality control (library size checks, outlier detection)
-- Normalization and variance-stabilizing transformation
+- Normalisation and variance-stabilising transformation
 - PCA-based outlier removal
 - Differential expression analysis with **PyDESeq2**
 - Gene ID mapping (Ensembl → gene symbol via MyGene.info)
-- Visualization (volcano plot, clustered heatmap)
+- Visualisation (volcano plot, clustered heatmap)
 - Pathway enrichment analysis across **GO Biological Process**, **KEGG**, and **WikiPathways** (via GSEApy/Enrichr)
 
 ## Key results
 
 - 1,739 differentially expressed genes identified between hippocampus and neocortex samples
 - Notable genes include *GABRE*, *DRD1*, *CAMKK2*, *NTS*, and *CEBPD*
-- Pathway enrichment run across three databases to characterize the biological processes affected
+- Pathway enrichment run across three databases to characterise the biological processes affected
 
 ## Figures
 
