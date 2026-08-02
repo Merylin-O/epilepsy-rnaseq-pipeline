@@ -1,0 +1,1 @@
+These figures were extracted directly from the notebook outputs (library size plot, PCA plots, scree plot, volcano plot, heatmap, and pathway enrichment plots). If you rerun the notebook and want to update them, use `plt.savefig("images/name.png")` before `plt.show()` in each plotting cell.
