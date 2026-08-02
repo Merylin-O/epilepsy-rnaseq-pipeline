@@ -2,7 +2,7 @@
 
 ## Project summary
 
-This project analyzes bulk RNA-seq data from dataset GSE134697, comparing hippocampus and neocortex tissue from patients with mesial temporal lobe epilepsy (MTLE). The goal is to identify genes that behave differently between the two tissue types and to understand what biological processes those genes are involved in.
+This project analyses bulk RNA-seq data from dataset GSE134697, comparing hippocampus and neocortex tissue from patients with mesial temporal lobe epilepsy (MTLE). The goal is to identify genes that behave differently between the two tissue types and to understand what biological processes those genes are involved in.
 
 ## 1. Data acquisition
 
@@ -20,7 +20,7 @@ This project analyzes bulk RNA-seq data from dataset GSE134697, comparing hippoc
 
 ## 3. Quality control
 
-- Library sizes (total reads per sample) were calculated and visualized as a bar chart.
+- Library sizes (total reads per sample) were calculated and visualised as a bar chart.
 - Samples with fewer than 10 million reads were flagged as potentially low quality.
 - One clear outlier pair (patient 5, hippocampus and neocortex) was removed based on unusually low library size.
 - Genes with zero counts across all samples were identified and excluded from downstream analysis.
@@ -30,11 +30,11 @@ This project analyzes bulk RNA-seq data from dataset GSE134697, comparing hippoc
 
 - PyDESeq2's `DeseqDataSet` was used to build a model with `patient` and `condition` as design factors.
 - Size factors were estimated to correct for differences in sequencing depth between samples.
-- Normalized counts were extracted and log2-transformed (with a pseudocount of 1) for visualization purposes.
+- Normalised counts were extracted and log2-transformed (with a pseudocount of 1) for visualisation purposes.
 
 ## 5. PCA and outlier detection
 
-- Principal component analysis (10 components) was run on the log2-normalized expression matrix.
+- Principal component analysis (10 components) was run on the log2-normalised expression matrix.
 - Samples were plotted on PC1 vs PC2 and PC2 vs PC3 to check for batch effects and outliers.
 - Outliers were defined objectively as samples falling more than 2 standard deviations from the mean on either PC1 or PC2.
 - Two further patient pairs (patient 7 and patient 13) were identified as outliers this way and removed, along with their matched pairs, to keep the dataset paired.
@@ -55,7 +55,7 @@ This project analyzes bulk RNA-seq data from dataset GSE134697, comparing hippoc
 ## 8. Visualization
 
 - **Volcano plot**: all genes plotted by log2 fold change vs -log10(padj), colored by upregulated, downregulated, or not significant.
-- **Clustered heatmap**: the top 50 most significant genes, with a color bar showing which samples are Hippocampus vs Neocortex.
+- **Clustered heatmap**: the top 50 most significant genes, with a colour bar showing which samples are Hippocampus vs Neocortex.
 
 ## 9. Pathway enrichment analysis
 
@@ -73,6 +73,3 @@ This project analyzes bulk RNA-seq data from dataset GSE134697, comparing hippoc
 
 pandas, numpy, matplotlib, seaborn, scikit-learn, GEOparse, PyDESeq2, mygene, gseapy
 
-## Next steps
-
-This pipeline is being extended toward computational neural modelling work, connecting the differentially expressed genes identified here to conductance-based neural models, protein-protein interaction networks (via STRING), and cross-referencing with Allen Brain Atlas and GTEx expression data.
